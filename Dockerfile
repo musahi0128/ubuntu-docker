@@ -10,4 +10,7 @@ RUN apt update && \
     rm -rf /var/lib/apt/lists/* && \
     curl https://rclone.org/install.sh | bash && \
     curl -sL -o /usr/local/bin/ttyd https://github.com/tsl0922/ttyd/releases/download/1.7.4/ttyd.x86_64 && chmod a+x /usr/local/bin/ttyd && \
+    curl -sL -o oci-install.sh https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh && \
+    chmod a+x oci-install.sh && \
+    oci-install.sh --accept-all-defaults && \
     service ssh start
