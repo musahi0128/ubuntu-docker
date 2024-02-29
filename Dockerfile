@@ -4,7 +4,7 @@ ENV TZ="Asia/Jakarta" DEBIAN_FRONTEND="noninteractive"
 
 RUN apt update && \
     apt upgrade -yq && \
-    apt install -yq aria2 curl ffmpeg fuse3 htop jq mkvtoolnix nano ncdu openssh-client openssh-server parallel postgresql-client qbittorrent-nox rename speedtest-cli tmux unzip && \
+    apt install -yq aria2 curl ffmpeg fuse3 htop jq mkvtoolnix nano ncdu openssh-client openssh-server parallel postgresql-client qbittorrent-nox rename speedtest-cli tmux tmate unzip python3-pip && \
     apt autoremove --purge && \
     apt clean && \
     rm -rf /var/lib/apt/lists/* && \
