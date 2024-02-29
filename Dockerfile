@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-ENV TZ="Asia/Jakarta" DEBIAN_FRONTEND="noninteractive"
+ENV DEBIAN_FRONTEND="noninteractive"
 
 RUN apt update && \
     apt upgrade -yq && \
